@@ -1,6 +1,6 @@
 {
   "name": "gulp-preprocess-file",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "A Gulp plugin for Preprocess files based off environment configuration. Based on Preprocess package",
   "main": "lib/index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   "devDependencies": {},
   "dependencies": {
     "gulp-util": "^3.0.8",
+    "lodash": "^4.17.10",
     "preprocess": "^3.1.0",
     "through2": "^2.0.3"
   }
