@@ -1,0 +1,28 @@
+{
+  "name": "gulp-preprocess-file",
+  "version": "1.0.0",
+  "description": "A Gulp plugin for Preprocess files based off environment configuration. Based on Preprocess package",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mengqing723/gulp-preprocess-file.git"
+  },
+  "keywords": [
+    "gulp",
+    "preprocess"
+  ],
+  "author": "LMQ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mengqing723/gulp-preprocess-file/issues"
+  },
+  "homepage": "https://github.com/mengqing723/gulp-preprocess-file#readme",
+  "devDependencies": {
+    "gulp-util": "^3.0.8",
+    "preprocess": "^3.1.0",
+    "through2": "^2.0.3"
+  }
+}
