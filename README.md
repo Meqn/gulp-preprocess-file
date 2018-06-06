@@ -59,4 +59,4 @@ more: [preprocess](https://github.com/jsoverson/preprocess)
 
 `gulp-preprocess-file` Based on [Preprocess](https://github.com/jsoverson/preprocess) package
 
-MIT © [Merven](https://github.com/mengqing723)
+MIT © [Mervin](https://github.com/mengqing723)
