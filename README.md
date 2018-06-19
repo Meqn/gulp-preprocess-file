@@ -1,6 +1,9 @@
 # gulp-preprocess-file
 
-> A Gulp plugin for Preprocess files based off environment configuration. Based on Preprocess package
+> A Gulp plugin for Preprocess
+
+Preprocess HTML, JavaScript, and other files with directives based off custom or ENV configuration
+
 
 
 # Usage
@@ -24,16 +27,13 @@ var preprocess = require('gulp-preprocess-file');
 gulp.task('test:html', () => {
   gulp.src('./src/*.html')
     .pipe(preprocess({
-      context: {
-        NODE_ENV: 'production',
-        title: 'this is a title',
-        cdnFile: function(file) {
-          return 'https://cdn.com/' + file
-        }
-      },
-      extension: {
-        srcDir: './src/'
+      NODE_ENV: 'production',
+      title: 'this is a title',
+      cdnFile: function(file) {
+        return 'https://cdn.com/' + file
       }
+    }, {
+      srcDir: './src/'
     }))
     .pipe(gulp.dest('dist/'))
 })
@@ -70,13 +70,10 @@ var preprocess = require('gulp-preprocess-file');
 gulp.task('test:js', () => {
   gulp.src(['./script/*.js'])
     .pipe(preprocess({
-      context: {
-        NODE_ENV: 'production',
-        name: 'John',
-      },
-      extension: {
-        type: 'js'
-      }
+      NODE_ENV: 'production',
+      name: 'John'
+    }, {
+      type: 'js'
     }))
     .pipe(gulp.dest('dist/'))
 })
@@ -107,18 +104,10 @@ more: [preprocess#configuration](https://github.com/jsoverson/preprocess#configu
 # API
 
 ```js
-preprocess(options)
+preprocess(context, options)
 ```
 
-**options**
-
-Type: `Object`
-
-more: [preprocess#api](https://github.com/jsoverson/preprocess#api)
-
-
-
-**options.context**
+**context**
 
 Type: `Object`
 
@@ -126,11 +115,17 @@ more: [preprocess#context](https://github.com/jsoverson/preprocess#context)
 
 
 
-**options.extension**
+**options**
 
 Type: `Object`
 
 more: [preprocess#options](https://github.com/jsoverson/preprocess#options)
+
+
+
+**API**
+
+[preprocess#api](https://github.com/jsoverson/preprocess#api)
 
 
 

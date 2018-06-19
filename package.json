@@ -1,6 +1,6 @@
 {
   "name": "gulp-preprocess-file",
-  "version": "1.2.1",
+  "version": "2.0.1",
   "description": "A Gulp plugin for Preprocess files based off environment configuration. Based on Preprocess package",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,10 @@
   },
   "keywords": [
     "gulp",
-    "preprocess"
+    "preprocess",
+    "preprocess file",
+    "ENV configuration",
+    "custom variables"
   ],
   "author": "LMQ",
   "license": "MIT",
